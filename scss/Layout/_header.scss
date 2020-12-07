@@ -1,0 +1,123 @@
+header {
+    @include styleText($color-black-light, $fs-1, $fw-normal);
+}
+.header__left {
+    display: flex;
+
+    .navbar-brand img {
+        width: 110px;
+    }
+    .header__categories {
+        margin: 0 15px;
+        align-self: center;
+    }
+    .header__form {
+        flex-grow: 1;
+        position: relative;
+
+        .header__search {
+            border: transparent;
+            background-color: #f2f3f5;
+            padding: 16px;
+            box-sizing: border-box;
+            border-radius: 2px;
+
+            &:focus {
+                background-color: #fff;
+                border: 1px solid #ddd;
+                box-shadow: none;
+                box-sizing: border-box;
+            }
+        }
+
+        .header__btn {
+            border: transparent;
+            background-color: transparent;
+            padding: 8px 15px;
+            color: #ec5252;
+            position: absolute;
+            height: 100%;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            margin: 0;
+
+            &:hover {
+                background-color: #ec5252;
+                border-radius: 0 2px 2px 0;
+                color: #fff;
+                height: 100%;
+            }
+        }
+    }
+}
+.header__right {
+
+    .header__menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-item {
+        text-align: center;
+        width: 100%;
+    }
+    .nav-link {
+        line-height: 30px;
+        @include styleText($color-black-light, $fs-1, $fw-normal);
+    }
+    .btn-login {
+        @include styleButton($color-white-0, $color-gray-4, $border-radius, $pd-1 + 1, $pd-1 + 2);
+        @include styleText($color-gray-4, $fs-0, $fw-bold-1);
+        &:hover {
+            @include styleHoverButton($color-white-0, $color-black-0, $color-black-0);
+        }
+    }
+    .btn-signup {
+        @include styleButton($color-red-0, $color-trans, $border-radius, $pd-1 + 1, $pd-1 + 2);
+        @include styleText($color-white-0, $fs-0, $fw-bold-1);
+        &:hover {
+            @include styleHoverButton($color-red-2, $color-trans, $color-white-0);
+        }
+    }
+}
+
+// RESPONSIVE
+
+.header__right {
+
+    .ude-btnGroup {
+        white-space: nowrap;
+    }
+    @include responsive('extra-large') {
+        .business, .teach {
+            display: none;
+        }
+    }
+    @include responsive('large') {
+        
+    }
+
+    @include responsive('medium') {
+        .ude-btnGroup {
+            display: none;
+        }
+    }
+
+}
+.header__left {
+    @include responsive('medium') {
+        justify-content: center;
+
+        .header__categories, .header__form {
+            display: none;
+        }
+    }
+    @include responsive('small') {
+        justify-content: center;
+
+        .header__categories, .header__form {
+            display: none;
+        }
+    }
+
+}

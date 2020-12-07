@@ -1,0 +1,118 @@
+.comments {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 40px;
+
+  .slick-dots {
+    text-align: center;
+
+    .slick-active {
+      background: #686f7a !important;
+    }
+    li {
+      list-style: none;
+      border-radius: 50%;
+      border: none;
+      display: block;
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      font-size: 0;
+      padding: 0;
+      background: #dedfe0;
+      display: inline-block;
+
+      button {
+        border: transparent;
+        background: none;
+        outline: none;
+      }
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .slider-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+
+    .slick-track {
+      display: flex !important;
+
+      .slick-slide {
+        height: inherit !important;
+      }
+    }
+
+    .slick-arrow.left {
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: -15px;
+      font-size: 20px;
+      color: #007791;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      box-shadow: 2px 2px 5px #ccc;
+      border-radius: 50%;
+    }
+
+    .slick-arrow.right {
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      right: -15px;
+      font-size: 20px;
+      color: #007791;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      box-shadow: 2px 2px 5px #ccc;
+      border-radius: 50%;
+    }
+
+    .comments__item {
+      margin: 5px;
+      width: 100%;
+      min-height: 100%;
+      padding: 0 5px;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 1px #ddd;
+      display: flex;
+      flex-direction: column;
+
+      .comments__author {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .comments__text {
+      }
+
+      img {
+        width: 64px;
+        border-radius: 50%;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 10px 0 0 15px;
+      }
+    }
+  }
+}
