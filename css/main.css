@@ -591,6 +591,8 @@ body {
   }
   .intro .intro__container .intro__right {
     width: 100%;
+    margin: 0;
+    padding: 0;
   }
   .intro .intro__container .intro__right .intro__top .nav-tabs {
     display: -webkit-box;
@@ -819,6 +821,8 @@ body {
   .services .services__container .services__carousel .services__item {
     display: block;
     text-align: center;
+    margin: 0;
+    padding: 20px 10px 5px 10px;
   }
 }
 

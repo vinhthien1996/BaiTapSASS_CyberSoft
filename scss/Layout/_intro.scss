@@ -251,8 +251,11 @@
       }
       .intro__right {
         width: 100%;
+        margin: 0;
+        padding: 0;
 
         .intro__top {
+
           .nav-tabs {
             display: flex;
             flex-wrap: wrap;

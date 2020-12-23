@@ -1,5 +1,5 @@
-<h3>BÀI TẬP SASS CYBERSOFT (CLONE HOMEPAGE UDEMY)</h3>
-<strong>CÁC CÔNG NGHỆ: </strong>
+<a href="http://vinhthien-clone-udemy.surge.sh"><strong>DEMO CLONE UDEMY</strong></a>
+<br/><strong>CÁC CÔNG NGHỆ: </strong>
 <br/>- HTML5
 <br/>- CSS3
 <br/>- SASS
